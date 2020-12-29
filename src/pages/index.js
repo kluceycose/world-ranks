@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import { useState } from 'react'
 import CountriesTable from '../components/CountriesTable/CountriesTable'
 import Layout from '../components/Layout/Layout'
@@ -20,10 +19,11 @@ export default function Home({ countries }) {
 
     setKeyword(e.target.value.toLowerCase());
   }
+
   return (
     <Layout>
       <div className={styles.inputContainer}>
-        <div className={styles.counts}>Found {countries.length} countries</div>
+        <div className={styles.counts}>Found {filteredCountries.length} countries</div>
   
         <div className={styles.input}>
           <SearchInput placeholder="Filter by Name, Region, or SubRegion" onChange={onInputChange}/>
