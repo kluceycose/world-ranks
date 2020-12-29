@@ -44,7 +44,7 @@ const Country = ({ country }) => {
               </div>
 
               <div className={styles.overiew_area}>
-                <div className={styles.overview_value}>{country.area}</div>
+                <div className={styles.overview_value}>{country.area || 0}</div>
                 <div className={styles.overview_label}>Area</div>
               </div>
             </div>
