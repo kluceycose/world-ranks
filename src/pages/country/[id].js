@@ -22,7 +22,7 @@ const Country = ({ country }) => {
 
   useEffect(() => {
     getBorders();
-  }, []);
+  }, [country]);
 
   console.log(borders);
 
